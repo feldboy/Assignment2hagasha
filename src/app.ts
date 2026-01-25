@@ -17,8 +17,12 @@ app.use(bodyParser.urlencoded({ extended: true }));
 // Routes
 import authRoutes from './routes/auth.routes';
 import userRoutes from './routes/user.routes';
+import postRoutes from './routes/post.routes';
+import commentRoutes from './routes/comment.routes';
 
 app.use('/auth', authRoutes);
 app.use('/users', userRoutes);
+app.use('/posts', postRoutes);
+app.use('/comments', commentRoutes);
 
 export default app;
